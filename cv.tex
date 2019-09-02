@@ -1,0 +1,119 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=blue,linkcolor=blue}
+
+\usepackage{libertine}
+
+\usepackage{longtable}
+
+\usepackage[cm]{fullpage}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1em}{3pt}
+
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{Pavel Turyanskiy}
+\fancyfoot[C]{Page \thepage of \pageref*{LastPage}}
+\fancyfoot[R]{\today}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+  \begin{center}
+    \Huge \textsc{Pavel Turyanskiy}
+  \end{center}
+
+  \hrule
+  \vspace{0.5em}
+
+  \begin{tabular}{rl}
+    \textsc{Phone:}  & +7 999 239 8819                                      \\
+    \textsc{Email:}  & \href{mailto:p.turyanskiy@pm.me}{p.turyanskiy@pm.me} \\
+    \textsc{Github:} & \href{https://github.com/cmcmA20}{cmcmA20}           \\
+  \end{tabular}
+
+  \section{Summary}
+    I'm a software developer based in Russia. First time I got interested in functional programming in 2014 but
+    my skills were definitely lacking. After studying a bit of hard mathematics and graduating I find myself capable of
+    trying it in a real environment.
+
+    I used to do different jobs until I felt comfortable with my general IT experience.
+
+  \section{Skills and accomplishments}
+    \begin{longtable}{rp{0.6\textwidth}}
+      \textsc{Languages:} & Russian, English \\
+
+      \textsc{Translations:} & \href{https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH\_LTkxLI7FMa2HsnawM\_}
+                               {Category Theory for Programmers by Bartosz Milewski}, see Russian subtitles      \\
+
+      \textsc{Functional programming:} & studied Haskell under \href{https://artyom.me}{Artyom "neongreen" Kazak} \\
+                                       & have done Software Foundations in Idris                                  \\
+
+      \textsc{Networking:} & designed and overseen the construction of enterprise ethernet
+                             networks (up to a hundred of PCs, mainly copper)                    \\
+                           & designed and overseen the construction of enterprise virtualization
+                             cluster networks                                                    \\
+                           & designed and developed a simple scalable VoIP system for enterprise
+                             using Asterisk + LUA                                                \\
+
+      \textsc{Virtualization:} & designed, built and maintained virtualization clusters using VMware ESXi and Proxmox \\
+                               & transitioned legacy infrastructures to private cloud                                 \\
+
+      \textsc{OS:} & operated Windows Server (2008 - 2012R2), FreeBSD, Linux (Debian, CentOS) in production \\
+                   & personally prefer Void Linux and OpenBSD                                               \\
+
+      \textsc{Security:} & have basic experience with SIGINT                                            \\
+                         & can do something resembling really secure boot with coreboot + HEADS and TPM \\
+    \end{longtable}
+
+  \section{Interests}
+    \begin{tabular}{rl}
+      \textsc{Mathematics:} & casually read nLab, sometimes even understand                      \\
+                            & skimmed through HoTT book and preparing to study HoTT in Agda      \\
+                            & studied topology and differential geometry under Iskander Taimanov \\
+                            & completed Robert Ghrist's
+                              \href{https://www.coursera.org/account/accomplishments/records/9Y3N9X2BMR}{Calculus:
+                              Single Variable} \\
+      \textsc{Hardware:} & recently got interested in Thinkpad tinkering \\
+                         & want to learn building UAVs                   \\
+    \end{tabular}
+
+  \section{Work experience}
+    \begin{longtable}{r|p{0.72\textwidth}}
+      \textsc{Oct 2017--Jul 2019} & \large \sffamily \textbf{Information Security Engineer} at \textbf{FSUE NPP Gamma},
+                                    Russia \\
+      (1 year, 10 months) & was on duty in Samara Arena during FIFA 2018 world cup as a technical security
+                            consultant                                                                                \\
+                          & had done some PowerShell automation, physical fleet configuration management (w/Saltstack)\\
+                          & operated Rohde\&Schwarz and Agilent spectrum analyzers through Python + NIVISA            \\
+                          & designed computer networks                                                                \\
+                          & had to work with obscure equipment and software                                           \\
+      \\&\\
+      \textsc{Jan 2017--Aug 2017} & \large \sffamily \textbf{Network Engineer} at \textbf{Sibirskie Seti Ltd.}, Russia\\
+      (8 months) & configured equipment of the following vendors: Extreme Networks, Juniper, Cisco, D-Link, TP-Link   \\
+                 & wrote network monitoring scripts for Nagios using bash/Python                                      \\
+                 & performed equipment and network testing with Python + scapy                                        \\
+                 & communicated with NOCs of other ISPs                                                               \\
+                 & got an L2 loop in the management network once                                                      \\
+      \\&\\
+      \textsc{Sep 2016--Dec 2016} & \large \sffamily \textbf{Engineering Technician} at \textbf{ITVaksa Ltd.}, Russia \\
+      (4 months) & everything from physical cabling to small business network/system design                           \\
+    \end{longtable}
+
+  \section{Education}
+    \begin{longtable}{r|p{0.72\textwidth}}
+      \textsc{Sep 2014--May 2018} & \large \sffamily \textbf{BS in Informatics} at \textbf{SibSUTI},
+                                    Novosibirsk, Russia \\
+      (4 years) & \\
+      \\&\\
+      \textsc{Sep 2006--May 2010} & \large \sffamily at \textbf{Lyceum 1}, Bratsk, Russia \\
+      (4 years) & Physics and Math specialization \\
+    \end{longtable}
+
+\end{document}
